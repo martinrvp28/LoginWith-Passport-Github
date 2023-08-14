@@ -1,0 +1,33 @@
+<div class="containerLogin">
+    <h1>LOGIN</h1>
+
+    <form action="/login" method="post">
+        Email <input type="email" name="email" id="email"/>
+        Password <input type="password" name="password" id="password"/>
+        <input class="registerSubmit" type="submit" value="INGRESAR"/>
+    </form>
+
+    <button class="registerbutton" onclick="location.href='/register'">Registrarme</button>
+
+    <div class="containerTypes">
+
+        <div>
+            
+            <button class="githubButton" onclick=redirect()><img class="logo-git" src="/github-logo.png" alt="Imagen de redirección">Ingresar con GitHub</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<script>
+        function redirect() {
+            window.location.href = "http://localhost:8080/register-github";
+        }
+</script>
+
+

@@ -1,0 +1,248 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainHeader{
+    background-color: red;
+    color: white;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.mainHeader ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.mainHeader ul li{
+   list-style: none;
+}
+
+.mainHeader ul li:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+ }
+
+.mainHeader ul li a{
+  text-decoration: none;
+  color: white;
+ }
+
+.mainHeader .logout{
+    background-color: rgb(255, 255, 255);
+    color: red;
+    position: absolute;
+    right: 40px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8rem;
+}
+
+.mainHeader .logout:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.containerProducts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+
+}
+
+.containerUl{
+
+    min-width: 200px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px ;
+    box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.75);
+}
+
+.containerUl2{
+
+    min-width: 50px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.75);
+}
+
+#products{
+    max-width: 750px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+
+.containerUl p span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.noProduct{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.noProduct2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerFormProd{
+    display: flex;
+    gap: 100px;
+    margin-top: 30px;
+    min-width: 1000px;
+    justify-content: center;
+}
+
+.tableCart thead {
+    padding: 30px;
+    border-collapse: collapse !important;
+    background-color: grey;
+}
+
+.tableCart td {
+    padding: 30px;
+    text-align: center;
+}
+
+.tableCart{
+    border: red 5px solid;
+}
+
+.tableCart th:hover{
+    border: rgba(18, 13, 63, 0.349) 5px solid;
+}
+
+
+.containerLogin{
+    border: solid 2px red;
+    padding: 20px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.75);
+}
+
+.containerLogin h1{
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+.containerLogin form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.registerbutton{
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    margin-top: 20px;
+    width: 100%;
+    text-align: end;
+}
+
+.registerbutton:hover{
+    color: red;
+}
+
+.registerSubmit{
+
+    margin-top: 20px;
+    border: solid 1px red;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.registerSubmit:hover{
+    color: red;
+}
+
+.containerUserError{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto 50px auto;
+}
+
+.goToLogin{
+    margin-top: 20px;
+    
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.containerProfile{
+    border: 1px solid red;
+    margin: 80px auto 50px auto;
+    padding: 40px;
+}
+
+.githubButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px;
+    border: none;
+}
+
+.githubButton:hover{
+    transform: scale(1.03);
+}
+
+.logo-git{
+    width: 35px;
+}

@@ -1,0 +1,31 @@
+{{#if user}}
+<h1>Bienvenido {{user.first_name}}</h1>
+{{/if}}
+
+    <h2>LISTA DE PRODUCTOS</h2>
+
+    <div class="containerProducts">
+        {{#if response.payload.length}}
+            {{#each response.payload}}
+                <ul class="containerUl">
+                    <p><span>Producto:</span> {{title}}</p>
+                    <p><span>Descripcion:</span> {{description}}</p>
+                    <p><span>Precio:</span> {{price}}</p>
+                    <p><span>Codigo: </span>{{code}}</p>
+                    <p><span>Stock:</span> {{stock}}</p>
+                    <p><span>Categoria:</span> {{category}}</p>
+                    <button onclick="addToCart('{{code}}')">Agregar al Carrito</button>
+                </ul>
+            {{/each}}
+        {{else}}
+            <p class="noProduct">No hay productos</p>
+        {{/if}}
+    </div>
+
+    {{#if response.hasNextPage}}
+        <a href="{{response.nextLink}}">Siguiente</a>
+    {{/if}}
+
+    {{#if response.hasPrevPage}}
+        <a href="{{response.prevLink}}">Anterior</a>
+    {{/if}}
